@@ -1,0 +1,19 @@
+p {
+    color: red;
+    font-family: montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: justify;
+    text-decoration: underline;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+button {
+    letter-spacing: 10px;
+}
+h1 { 
+    text-align: center;
+    text-transform: uppercase;
+}
