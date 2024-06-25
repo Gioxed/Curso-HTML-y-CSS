@@ -1,70 +1,53 @@
 body {
-    background-color: rgb(44, 32, 32);
+    background-color: #fff;
     font-family: sans-serif;
-    color: rgb(35, 35, 35);
+    color: #fff;
 }
 .card {
-    background-color:aqua;
+    background-color: #6ac;
     text-align: center;
     width: 300px;
     margin: auto;
     margin-top: 20px;
-    border: 10px solid rgb(175, 156, 199);
+    padding: 20px 10px;
+    box-shadow: 0px 0px 35px#0006;
+    border-radius: 8px;
 }
 
-h1 { 
-    padding-top: 20px;
-    font-size: 30px;
+.red_card{
+    background-color: rgb(209, 86, 86);
+}
+
+.green_card{
+    background-color: rgb(102, 207, 102);
+}
+
+.yellow_card{
+    background-color: rgb(226, 226, 71);
+}
+
+.card_title { 
+    font-size: 22px;
     margin: 0;
 }
 
-h2 { 
-    font-size: 17px;
+.card_subtitle { 
+    font-size: 13px;
     font-weight: 100;
     letter-spacing: 1px;
+    margin: 0;
+    margin-top: 5px;
 }
 
-p {
-    font-size: 15px;
+.card_content {
+    font-size: 9px;
     padding: 10px;
-    background: turquoise;
+    padding-bottom: 0;
     text-align: justify;
+    margin-bottom: 0;
 }
 
-img{
-    border-radius: 10px;
-    border: 3px solid black;
-}
-
-form {
-    background: black;
-    width:250px;
-    height: 115px;
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 10px;
-
-    margin:auto;
-
-    border-width: 3px;
-    border-color: rgb(46, 46, 46);
-    border-style: solid;
-    border-radius: 2px;
-    border-top: 3px solid rgb(175, 156, 199);
-    border-bottom: 3px solid rgb(175, 156, 199);
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-input { 
-    margin-top: 6px;
-    margin: 5px;
-    padding: 5px;
-    border: none;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    background: transparent;
-    color: yellow;
-    border-radius: 5px;
-    width: 200px;
+.card_img{
+    width: 100px;
+    border-radius: 7px;
 }
