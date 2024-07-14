@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- idioma de la pagina -->
+<html>
+    <head>
+        <meta charset="UTF-8"> <!-- permite todos los caracteres utilizados en el mundo en cualquier dispositivo -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- permite que la página este adaptada a cualquier dispositivo -->
+        <meta name="description" content="fotos de gatos muy lindos"> <!-- descripción de la pagina de unos 100 caracteres -->
+        <meta name="keywords" content="gatos, gato, gatito, fotos, foto, lindos, tiernos">  <!--palabras clave de la página -->
+        <meta name="author" content="Giovanni Pauletto"> <!--autor de la página, creador, desarrollador-->
+
+
+        <title>Fotos de gatitos</title>
+        <link rel="icon" href="../imagenes/icono.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <marquee direction="right"><h1>Michis Tiernos</h1></marquee>
+        
+        <nav>
+            <ul>
+                <li><a href="">UNO</a></li>
+                <li><a href="">DOS</a></li>
+                <li><a href="">TRES</a></li>
+                <li><a href="">CUATRO</a></li>
+                <li><a href="">CINCO</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="recipe-container">
+                <p>CONTENIDO PRINCIPAL DE LA PÁGINA</p>
+            </section>
+        </main>
+        <aside>
+            <p>CONTENIDO SECUNDARIO DE LA PÁGINA</p>
+        </aside>
+        <section class="comments-container">
+
+        </section>
+
+        <h2>Adorables</h2>
+        <p>
+            Los gatos son criaturas muy lindas y adorables para la mayoria de los seres humanos, nos acompañan en el trayecto de la vida dandonos su cariño y amor junto con algunos mordiscos, pero no importa, porque estos hermosos animales nos acompañan en nuestros mejores y peores momentos de la vida. Mientras nosotros les consentimos todas sus necesidades y los mimamos, ellos viven la vida pancha.
+        </p>
+        <h3>Michi 1:</h3>
+        <img loading="lazy" src="..\Imagenes\images.jpg" alt="Gatito lindo" title="Gatito lindo">
+        <h3>Michi 2:</h3>
+        <img loading="lazy" src="..\Imagenes\gatito.jpg" alt="Otro Gatito lindo" title="Otro Gatito lindo">
+
+        <form>
+            <h2>Formulario de contacto</h2>
+
+            <fieldset> 
+                <legend>INFORMACIÓN BÁSICA</legend><!--INPUTS SIMPLES-->
+                <div class="form_input">
+                    <label>Nombre completo
+                        <input type="text" placeholder="Roberto Ramirez">
+                    </label>
+                </div>
+                <div class="form_input">
+                    <label>Email
+                        <input type="email" placeholder="Ejemplo@gmail.com">
+                    </label>
+                </div>
+                <div class="form_input">
+                    <label>Asunto
+                        <input type="text" placeholder="El asunto de tu mensaje">
+                    </label>
+                </div>
+            </fieldset>
+
+            <!--SELECT Y OPTION-->
+            <div class="form_input">
+                <label>Tipo de usuario
+                    <select name="type-of-user">
+                        <option value="user1">Seguidor</option>
+                        <option value="user2">Empresa</option>
+                        <option value="user3">Otros</option>
+                    </select>
+                </label>
+            </div>
+
+        <!--DATALIST Y OPTION-->
+            <div class="form_input">
+                <label>referente
+                    <input list="referente">
+                    <datalist id="referente" name="type-of-user">
+                        <option value="Publicidad">xd</option>
+                        <option value="Una Empresa">Empresas it</option>
+                        <option value="Un amigo">Me recomendó un amigo</option>
+                    </datalist>
+                </label>
+            </div>
+
+            <!--TEXT AREA-->
+            <div class="form_input">
+                <label>Mensaje
+                    <textarea rows="6" placeholder="Dejá tu mensaje..."></textarea>
+                </label>
+            </div>
+
+            <div class="form_input">
+                <label>Acepto los <a href="terms.html" target="blank">términos y condiciones</a>
+                    <input type="checkbox" class="checkbox">
+                </label>
+            </div>
+
+            <div class="form_input">
+                <input type="submit" class="fancy-button" value="Enviar">
+            </div>
+        </form>
+
+        <footer>
+            <p>
+                Copyright @ 2024-Protegido por derechos de autor
+            </p>
+        </footer>
+    </body>
+</html>

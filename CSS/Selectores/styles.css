@@ -1,3 +1,132 @@
+/*COMENTARIO EN CSS*/
+
+/*Pseudoclases*/
+h1{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+/*CUANDO PASAMOS EL MOUSE POR ENCIMA DEL H1*/
+h1:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/*CUANDO clickeamos el h1*/
+h1:active{
+    background-color: #999;
+    color: #fff;
+}
+
+/*seleccionando el primer li*/
+.pseudoul li:first-child {
+    color: #f00;
+}
+/*seleccionando algún li pero tiene en cuenta los elementos que no son li*/
+.pseudoul li:nth-child(2n) {
+    color: #0f0;
+    background-color: #999;
+}
+
+/*solo cuenta a los li*/
+.pseudoul li:nth-of-type(2) {
+    color: brown;
+}
+/*seleccionando el ultimo li*/
+.pseudoul li:last-child{
+    color: #00f;
+}
+
+/*Seleccionando los li dentro de la lista pero que no tengan la clase excluido*/
+#lista li:not(.excluido) {
+    color: #fff;
+}
+div{
+    border: 2px solid #000;
+}
+div:empty{
+    border: none;
+}
+
+input[type="checkbox"]{
+    margin:50px;
+}
+/*Si está checkeado cambian las propiedades*/
+input[type="checkbox"]:checked{
+    margin: 0px;
+}
+
+/*SELECCIONANDO ELNACES NO VISITADOS*/
+a:link{
+    color: red;
+}
+
+/*SELECCIONANDO ENLACES VISITADOS*/
+a:visited{
+    color: green;
+}
+
+/*SELECCIONANDO INPUT INVALIDOS*/
+input:invalid{
+    color:red;
+}
+
+/*SELECCIONANDO INPUT VALIDOS*/
+input:valid{
+    color:green;
+}
+
+section .elemento1,
+section .elemento2,
+section .elemento3 {
+    color: red;
+}
+
+/*modificando los elementos 1, 2 y 3 que estan dentro de un section*/
+section :is(.elemento1, .elemento2, .elemento3) {
+    color: blue !important;
+}
+/*SI NO QUEREMOS QUE CAMBIE LA ESPECIFICIDAD USAMOS EL WHERE()*/
+
+/*EN CASO DE QUE A UL LE DIGA UN DIV, MODIFICAMOS EL UL*/
+ul:has(+div){
+    background-color: #000;
+    color: #fff;
+}
+
+label:has(input:invalid){
+    color: red;
+}
+label:has(input:valid){
+    color: green;
+}
+
 .faltante {
     color: red
+}
+
+/*SELECTOR DE ATRIBUTO*/
+img [scr$="jpg "]{
+    width: 100%;
+}
+
+/*SELECTOR DESCENDIENTE*/
+ul li{
+    color: #666;
+}
+
+/*SELECTOR DE HIJO DIRECTO*/
+LI > strong {
+    color: blue;
+}
+
+/*SELECTOR DE HERMANO ADYACENTE*/
+h1 + p{
+    color:aqua;
+}
+
+/*SELECTOR DE HERMANOS GENERALES*/
+h1 ~ p {
+    color:aqua;
 }
