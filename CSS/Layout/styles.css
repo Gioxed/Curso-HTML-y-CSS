@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #f96769;
+    color: #fff;
+}
+
+div, header, nav, ul, h1, h2, p, img {
+    box-sizing: border-box;
+}
+
+/*---HEADER SECTION---*/
+
+.header {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url(escuela2.jpg);
+    background-size: cover;
+    display: flex;
+}
+
+.header__overlay {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0006;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__item-container{
+    position: relative;
+    z-index:10;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;;
+}
+
+.header__item-container p {
+    text-wrap: pretty;
+}
+
+.header__img {
+    min-width: 250px;
+    max-width: 40%;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    margin: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.6rem;
+    text-wrap: balance;
+}
+
+
+/*---NAVBAR SECTION---*/
+
+.nav{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 6px 20px;
+    position:sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px #0009;
+}
+
+.nav__ul{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__ul-container{
+    flex-grow: 4;
+}
+
+.nav__logo-container, .nav__ul-container{
+    flex-grow:1;
+    text-align: center;
+}
+
+.nav__link {
+    color:#f96769;
+    text-decoration: none;
+    display:inline-block;
+    padding: 8px;
+    border-radius: 0;
+    transition: background-color 0.3s, border-radius 0.2s, outline 0.3s, outline-offset 0.3s;
+    margin: 2px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.nav__link:hover{
+    background-color: #f769;
+    color: #fff;
+    border-radius: 20px;
+    outline: 2px solid #f766;
+    outline-offset: -6px;
+}
+
+.link--login {
+    background-color: #f96769;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 24px;
+    margin-left: 6px;
+}
+
+.link--login:hover {
+    background-color: #d04c4d;
+    outline: none;
+}
+
+.nav__logo {
+    width: 60px;
+}
